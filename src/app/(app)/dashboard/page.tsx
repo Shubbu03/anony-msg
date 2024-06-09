@@ -15,7 +15,7 @@ import { useSession } from "next-auth/react";
 import { Key, useCallback, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
-const Page = () => {
+const Dashboard = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isSwitchLoading, setIsSwitchLoading] = useState(false);
@@ -74,7 +74,7 @@ const Page = () => {
         toast({
           title: "Error",
           description:
-            axiosError.response?.data.message ||
+            // axiosError.response?.data.message ||
             "Failed to fetch message settings",
           variant: "destructive",
         });
@@ -193,4 +193,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Dashboard;
