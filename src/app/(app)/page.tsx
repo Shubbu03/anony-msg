@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react'; // Assuming you have an icon for messages
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Autoplay from 'embla-carousel-autoplay';
-import messages from '@/messages.json';
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react"; // Assuming you have an icon for messages
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Autoplay from "embla-carousel-autoplay";
+import messages from "@/messages.json";
 
 import {
   Carousel,
@@ -14,13 +14,14 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
     <>
       {/* Main content */}
-      <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gray-800 text-white">
+      {/* <div className="flex flex-col min-h-screen"> */}
+      <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gray-800 text-white min-h-screen ">
         <section className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-5xl font-bold">
             Dive into the World of Anonymous Feedback
@@ -62,6 +63,7 @@ export default function Home() {
       <footer className="text-center p-4 md:p-6 bg-gray-900 text-white">
         © 2024 Anony Msg. All rights reserved.
       </footer>
+      {/* </div> */}
     </>
   );
 }
