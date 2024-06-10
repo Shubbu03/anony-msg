@@ -20,7 +20,8 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!username.isAcceptingMessage) {
+    if (!foundUser.isAcceptingMessage) {
+      console.log("status::", foundUser);
       return Response.json(
         { success: false, message: "User is not accepting message!!" },
         { status: 403 }
