@@ -18,10 +18,10 @@ async function dbConnect(): Promise<void> {
       process.env.MONGODB_URI || "Connection failed"
     );
 
-    console.log("db::", db);
+    // console.log("db::", db);
 
     connection.isConnected = db.connections[0].readyState;
-    console.log("Db.connections::", db.connections);
+    // console.log("Db.connections::", db.connections);
     console.log("DB Connected Successfully!!");
   } catch (err) {
     console.log("Database Connection failed!!", err);
