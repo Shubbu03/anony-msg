@@ -3,8 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import bcryt from "bcryptjs";
 import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/model/User";
-import NextAuth from "next-auth/next";
-import { use } from "react";
+
 
 export const authOptions: NextAuthOptions = {
   providers: [
